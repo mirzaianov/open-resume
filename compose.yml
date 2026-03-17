@@ -5,3 +5,9 @@ services:
     ports:
       - "127.0.0.1:${PORT}:3000"
     restart: unless-stopped
+    networks:
+      - dashboard_net
+
+networks:
+  dashboard_net:
+    external: true
