@@ -1,0 +1,7 @@
+services:
+  open-resume:
+    build: .
+    container_name: open-resume
+    ports:
+      - "127.0.0.1:${PORT}:3000"
+    restart: unless-stopped
